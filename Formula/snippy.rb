@@ -1,28 +1,28 @@
 class Snippy < Formula
   desc "Terminal client for the Snipo snippet manager"
   homepage "https://github.com/MohamedElashri/snipo"
-  version "2.1.1"
+  version "2.2.0"
   license "AGPL-3.0-only"
 
   on_macos do
     on_arm do
-      url "https://github.com/MohamedElashri/snipo/releases/download/v2.1.1/snippy_2.1.1_darwin_arm64.tar.gz"
-      sha256 "6d244937970fe93db375e39071b9f8b3b65f051a526cfb8d7d24d623c60c5c0d"
+      url "https://github.com/MohamedElashri/snipo/releases/download/v2.2.0/snippy_2.2.0_darwin_arm64.tar.gz"
+      sha256 "7f5920b7f3caff622749a6ce3724cefa85d6d73b494a3380cb2c493531e620af"
     end
     on_intel do
-      url "https://github.com/MohamedElashri/snipo/releases/download/v2.1.1/snippy_2.1.1_darwin_amd64.tar.gz"
-      sha256 "461470bfda7abe63883b598bcd1dc3b964024ddd924c589bc3fecb6d72057a78"
+      url "https://github.com/MohamedElashri/snipo/releases/download/v2.2.0/snippy_2.2.0_darwin_amd64.tar.gz"
+      sha256 "df059e259c8003582c0d2f0994da1c97e4ae23be8c483e26602c4a94ff0e786e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/MohamedElashri/snipo/releases/download/v2.1.1/snippy_2.1.1_linux_arm64.tar.gz"
-      sha256 "fadfdde8e14130ae7a46d0bbf7f4566494994fbead7d9aae8df552e051b94479"
+      url "https://github.com/MohamedElashri/snipo/releases/download/v2.2.0/snippy_2.2.0_linux_arm64.tar.gz"
+      sha256 "ed80d439e08e6b858847ed01b6f6280d33e6d97d8bcca3777c4ad0e31f8cc385"
     end
     on_intel do
-      url "https://github.com/MohamedElashri/snipo/releases/download/v2.1.1/snippy_2.1.1_linux_amd64.tar.gz"
-      sha256 "67015322c767d6dfb6b4ffdacb324efde2ade06803af341b2c099eac52ac5aa6"
+      url "https://github.com/MohamedElashri/snipo/releases/download/v2.2.0/snippy_2.2.0_linux_amd64.tar.gz"
+      sha256 "856cb78fb59576399dbcc137c533d9704827c4f71e263d4910e188d0e4841d95"
     end
   end
 
@@ -31,6 +31,6 @@ class Snippy < Formula
   end
 
   test do
-    assert_match "2.1.1", shell_output("#{bin}/snippy version")
+    assert_match "2.2.0", shell_output("#{bin}/snippy version")
   end
 end
